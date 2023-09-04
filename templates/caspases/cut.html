@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Cutting Results {% endblock %}</h1>
+    <br>
+    <p>These caspases cleave the following sequence(s):
+    <br><br>
+    {% autoescape false %}
+    {{ results }}
+    {% endautoescape %}
+    <br><hr>
+{% endblock %}
