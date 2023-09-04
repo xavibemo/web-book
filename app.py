@@ -1,10 +1,5 @@
-import re
-from sys import path
 from flask import Flask, render_template, request, url_for, flash, redirect
 from caspases import caspase_cutter
-
-# path.append('./modules')
-# from caspases import caspase_cutter
 
 
 app = Flask(__name__)
