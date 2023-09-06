@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request, url_for, flash, redirect, send_from_directory
+from flask import Flask, render_template, request, url_for, flash, redirect
 from caspases import input_file_handler, caspase_cutter
 
 # Web app initialization

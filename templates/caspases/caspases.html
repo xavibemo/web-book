@@ -14,25 +14,23 @@
         <p>Caspases Cutter Predicts Potential Cleavage Sites Cleaved by Caspases in Protein Sequence(s).
     </div>
     <div class="col-sm-auto">
+    <form method="post" enctype="multipart/form-data" id="caspasesFile">
         <div class="mb-3">
-            <form method="post">
             <label for="submitText" class="form-label">Enter your UniProtKB Accession IDs here (e.g., Q9H3R0).</label><br>
             <textarea class="form-control" name="caspasesText" rows="7" >{{ request.form['caspasesText'] }}</textarea>
             <div class="form-text">
                 Input the UniProtKB IDs one per line.
             </div><br>
             <input type="submit" class="btn btn-success btn-sm mb-3">
-            </form>
         </div>
         <br>
         <div class="mb-3">
-            <form method="post" enctype="multipart/form-data">
             <label for="submitFile" class="form-label">Enter a plain text file containing your UniProtKB Accession IDs, one per line.</label>
             <input class="form-control form-control-sm" type="file" name="caspasesFile">{{ request.files['caspasesFile'] }}<br>
             <input type="submit" class="btn btn-success btn-sm mb-3">
-            </form>
         </div>
         <br>
+    </form>
     </div>
     </div>
     </div>
